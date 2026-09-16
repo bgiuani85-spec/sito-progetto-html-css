@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatrice Giuliani</title>
+
+    <!-- Google Fonts & Bootstrap 5 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-dark">
+
+    <!-- Header Navigation -->
+    <header class="bg-white border-bottom sticky-top py-3">
+        <nav class="navbar navbar-expand-lg container">
+            <a class="navbar-brand text-uppercase fw-bold tracking-wider text-dark" href="index.html">BEATRICE GIULIANI</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">CHI SONO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">SERVIZI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contatti.html">CONTATTI</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section (Compatta) -->
+        <section class="hero-section position-relative d-flex flex-column justify-content-between text-center overflow-hidden">
+            <div class="hero-bg-wrapper">
+                <img src="assets/img/hero-bg.jpg" alt="Hero Background" class="hero-bg-img">
+            </div>
+
+            <div class="container my-auto py-4 position-relative" style="z-index: 2;">
+                <div class="mb-2">
+                    <span class="hero-star">&#10022;</span>
+                </div>
+                
+                <p class="text-uppercase tracking-widest small text-muted mb-2">HELPING BRANDS GROW</p>
+                
+                <h1 class="hero-title text-uppercase mb-3">
+                    AMBITIONS INTO<br>ACHIEVEMENTS
+                </h1>
+                
+                <div>
+                    <a href="contatti.html" class="btn btn-editorial text-dark text-decoration-none">
+                        CONTATTAMI
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-bottom-bar border-top py-2 position-relative" style="z-index: 2;">
+                <div class="container">
+                    <div class="row text-center text-uppercase text-muted small g-2">
+                        <div class="col-6 col-md-3">GROWTH MARKETING</div>
+                        <div class="col-6 col-md-3">VISUAL DESIGN</div>
+                        <div class="col-6 col-md-3">UX & CRO RESEARCH</div>
+                        <div class="col-6 col-md-3">AI AUTOMATION</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="py-5 border-bottom">
+            <div class="container py-4">
+                <div class="row align-items-center g-5">
+                    <div class="col-md-5">
+                        <div class="border p-2">
+                            <img src="assets/img/portrait.jpg" alt="Beatrice Giuliani" class="img-fluid w-100">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="text-uppercase tracking-widest small text-muted mb-2">PROFILO PROFESSIONALE</p>
+                        <h2 class="h3 fw-normal mb-4">Unire strategia analitica, visual design e intelligenza artificiale.</h2>
+                        <p class="text-muted mb-4">
+                            Mi occupo della progettazione di strategie di crescita su misura, unendo l'analisi dei dati, la visual brand identity e l'ottimizzazione dell'esperienza utente (UX/CRO) per trasformare la presenza dei brand in risultati concreti.
+                        </p>
+                        <a href="cv.html" class="btn btn-editorial text-dark text-decoration-none">SCOPRI IL MIO PERCORSO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Sezione Servizi (Layout Card Editoriale) -->
+        <section id="services" class="py-5 bg-white border-bottom">
+            <div class="container py-4 py-md-5">
+                
+                <div class="text-center mb-5">
+                    <span class="text-uppercase tracking-widest small text-muted d-block mb-2">COSA POSSO FARE PER TE</span>
+                    <h2 class="h2 fw-normal text-uppercase">Services Offered</h2>
+                </div>
+
+                <div class="d-flex flex-column gap-5 max-width-card mx-auto">
+                    
+                    <!-- Card Servizio 01 -->
+                    <div class="service-card position-relative border p-4 p-md-5">
+                        <div class="service-card-title text-uppercase border bg-white px-4 py-2 position-absolute top-0 start-50 translate-middle">
+                            Growth Marketing & Strategy
+                        </div>
+                        <div class="row align-items-center g-4 mt-2">
+                            <div class="col-12 col-md-4 text-center text-md-start">
+                                <p class="small text-muted mb-0">
+                                    Funnel AIDA, sperimentazione rapida con matrice ICE, Growth Loops e ottimizzazione delle conversioni per accelerare le performance del tuo brand.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <div class="service-card-img-wrapper mx-auto">
+                                    <img src="assets/img/service-1.jpg" alt="Growth Marketing" class="img-fluid w-100 h-100">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <span class="text-uppercase small fw-semibold tracking-wider d-block mb-2">Cosa è incluso</span>
+                                <ul class="list-unstyled small text-muted mb-0 service-list-dots">
+                                    <li>Audit del funnel di conversione</li>
+                                    <li>Definizione North Star Metric & OKR</li>
+                                    <li>Impostazione ICE matrix</li>
+                                    <li>Strategie di Growth Loop</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Servizio 02 -->
+                    <div class="service-card position-relative border p-4 p-md-5">
+                        <div class="service-card-title text-uppercase border bg-white px-4 py-2 position-absolute top-0 start-50 translate-middle">
+                            Visual & Content Design
+                        </div>
+                        <div class="row align-items-center g-4 mt-2">
+                            <div class="col-12 col-md-4 text-center text-md-start">
+                                <p class="small text-muted mb-0">
+                                    Brand identity, risorse grafiche per social media, layout editoriali e caroselli performanti orientati al coinvolgimento del pubblico.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <div class="service-card-img-wrapper mx-auto">
+                                    <img src="assets/img/service-2.jpg" alt="Visual Design" class="img-fluid w-100 h-100">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <span class="text-uppercase small fw-semibold tracking-wider d-block mb-2">Cosa è incluso</span>
+                                <ul class="list-unstyled small text-muted mb-0 service-list-dots">
+                                    <li>Brand Guidelines & Palette</li>
+                                    <li>Caroselli per Instagram & LinkedIn</li>
+                                    <li>Layout grafici ed editoriali</li>
+                                    <li>Performance Creative Assets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Servizio 03 -->
+                    <div class="service-card position-relative border p-4 p-md-5">
+                        <div class="service-card-title text-uppercase border bg-white px-4 py-2 position-absolute top-0 start-50 translate-middle">
+                            UX & CRO Research
+                        </div>
+                        <div class="row align-items-center g-4 mt-2">
+                            <div class="col-12 col-md-4 text-center text-md-start">
+                                <p class="small text-muted mb-0">
+                                    Audit euristici di usabilità, mappatura User Journey, survey utente e Service Blueprint per perfezionare l'esperienza digitale.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center">
+                                <div class="service-card-img-wrapper mx-auto">
+                                    <img src="assets/img/service-3.jpg" alt="UX Research" class="img-fluid w-100 h-100">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <span class="text-uppercase small fw-semibold tracking-wider d-block mb-2">Cosa è incluso</span>
+                                <ul class="list-unstyled small text-muted mb-0 service-list-dots">
+                                    <li>Audit euristici (Nielsen)</li>
+                                    <li>Mappatura User Journey & Persona</li>
+                                    <li>Progettazione User Survey</li>
+                                    <li>Service Blueprint & Wireframe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-white text-center border-top">
+        <div class="container">
+            <p class="small text-muted mb-0">&copy; 2026 Beatrice Giuliani. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

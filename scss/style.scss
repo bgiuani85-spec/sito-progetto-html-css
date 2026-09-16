@@ -1,0 +1,268 @@
+// ==========================================
+// 1. VARIABILI E SETUP GLOBALE
+// ==========================================
+$font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+// Palette Light (Home & CV)
+$light-bg: #ffffff;
+$light-bg-alt: #f8f8f6;
+$light-text: #1a1a1a;
+$light-border: #e0e0dc;
+$light-muted: #666666;
+
+// Palette Dark (Contatti) - Contrasti Ottimizzati
+$dark-bg: #0f0f0f;
+$dark-card-bg: #181818;
+$dark-text: #ffffff;          // Testo principale bianco puro
+$dark-text-sub: #d0d0d0;      // Sottotitoli / valori ad alto contrasto
+$dark-border: #2e2e2e;
+$dark-muted: #a0a0a0;         // Etichette e legende ben visibili
+
+// Reset & Base
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  color: $light-text;
+  background-color: $light-bg;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Utility Typography
+.tracking-wider { letter-spacing: 0.12em; }
+.tracking-widest { letter-spacing: 0.22em; }
+
+// ==========================================
+// 2. NAVBAR STICKY & EDITORIAL HEADER
+// ==========================================
+.navbar-editorial {
+  padding: 0.75rem 0;
+  
+  .nav-box {
+    border: 1px solid $light-border;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.45rem 1rem !important;
+    color: $light-text !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: all 0.25s ease-in-out;
+
+    &:hover, &.active {
+      background-color: $light-text;
+      color: #ffffff !important;
+      border-color: $light-text;
+    }
+  }
+
+  .nav-box-dark {
+    border: 1px solid $dark-border;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.45rem 1rem !important;
+    color: $dark-text !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: all 0.25s ease-in-out;
+
+    &:hover, &.active {
+      background-color: $dark-text;
+      color: $dark-bg !important;
+      border-color: $dark-text;
+    }
+  }
+}
+
+// ==========================================
+// 3. CONTACT PAGE (DARK THEME & HIGH CONTRAST)
+// ==========================================
+
+// Forza lo sfondo scuro su tutta la pagina quando ha la classe bg-dark-theme
+body.bg-dark-theme, .bg-dark-theme {
+  background-color: $dark-bg !important;
+  color: $dark-text !important;
+}
+
+// Gestione Bordi Tema Scuro
+.border-bottom-dark {
+  border-bottom: 1px solid $dark-border !important;
+}
+
+.border-top-dark {
+  border-top: 1px solid $dark-border !important;
+}
+
+// Box & Card della pagina Contatti
+.contact-card-dark {
+  background-color: $dark-card-bg !important;
+  border: 1px solid $dark-border !important;
+  border-radius: 4px;
+
+  // Correzione contrasto etichette e testi
+  .text-muted {
+    color: $dark-muted !important; // Garantisce grigio chiaro visibile
+  }
+
+  .text-light {
+    color: $dark-text !important; // Garantisce bianco puro per titoli e icone
+  }
+
+  h1, h2, .h6, p {
+    color: $dark-text;
+  }
+}
+
+// Form Moduli Scuri
+.form-control-dark {
+  background-color: #121212 !important;
+  border: 1px solid $dark-border !important;
+  color: $dark-text !important;
+  border-radius: 0;
+  padding: 0.8rem 1rem;
+  font-size: 0.88rem;
+
+  &:focus {
+    background-color: #121212 !important;
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: #777777 !important;
+    font-size: 0.8rem;
+  }
+}
+
+select.form-control-dark option {
+  background-color: $dark-card-bg;
+  color: $dark-text;
+}
+
+// Bottone d'invio form
+.btn-dark-submit {
+  background-color: #ffffff !important;
+  color: #0f0f0f !important;
+  border: 1px solid #ffffff !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.9rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: transparent !important;
+    color: #ffffff !important;
+  }
+}
+
+// Accordion / FAQ Scuri
+.border-dark-box {
+  border: 1px solid $dark-border !important;
+  background-color: $dark-card-bg !important;
+}
+
+.accordion-dark {
+  .accordion-item {
+    background-color: $dark-card-bg !important;
+  }
+
+  .accordion-button {
+    box-shadow: none !important;
+    color: $dark-text !important;
+    font-size: 0.95rem;
+
+    &:not(.collapsed) {
+      background-color: rgba(255, 255, 255, 0.03) !important;
+      color: $dark-text !important;
+    }
+
+    &::after {
+      filter: invert(1); // Rende la freccia dell'accordion bianca
+    }
+  }
+
+  .accordion-body {
+    color: $dark-text-sub !important;
+    line-height: 1.6;
+  }
+}
+
+// ==========================================
+// 4. CV & HOME GENERAL STYLES
+// ==========================================
+.cv-container {
+  max-width: 860px;
+}
+
+.cv-top-bar {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  border-color: $light-border !important;
+}
+
+.cv-name {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: $light-text;
+}
+
+.cv-subtitle {
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.cv-photo {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.cv-section-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.btn-editorial {
+  border: 1px solid $light-text;
+  background: transparent;
+  color: $light-text;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  padding: 0.7rem 2rem;
+  border-radius: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $light-text;
+    color: #ffffff;
+  }
+}
+
+// ==========================================
+// 5. RESPONSIVE MEDIA QUERIES
+// ==========================================
+@media (max-width: 991.98px) {
+  .navbar-editorial {
+    .navbar-collapse {
+      background: $light-bg;
+      padding: 1rem;
+      border: 1px solid $light-border;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .bg-dark-theme .navbar-editorial .navbar-collapse {
+    background: $dark-card-bg !important;
+    border-color: $dark-border !important;
+  }
+}
